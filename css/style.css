@@ -17,6 +17,7 @@
 
     font-family: "Montserrat",sans-serif;
     background-color: #f6f5f3;
+    
    }
 
 
@@ -26,6 +27,15 @@
     font-style: normal;
    }
 
+
+/* ----------------
+    GENERAL
+------------------- */
+
+.img-fluid{
+    max-width: 100%;
+    
+}
 
 
 /* --------------
@@ -37,7 +47,10 @@ h1{
 
     font-size: 40px;
     text-align: center;
+    padding: 15px;
     position:sticky;
+    top: 0;
+    left: 0;
     background-color: white;
     color:#ff9614;
 
@@ -47,10 +60,17 @@ h1{
     MAIN 
 --------------------*/
 
+main{
+    padding: 26px;
+    background-color: #f6f5f3;
+}
+
 .container{
 
     background-color: #ffff;
     background-size: 1200px;
+    padding: 70px;
+    display: flex;
 
     
     h2{
@@ -59,21 +79,54 @@ h1{
     font-size: 36px;
     }
 
+    .intro h2 > span {
+        display: none;
+    }
+
     h3{
-        font-size: 20px;
+
+        font-weight: 300;
+        text-transform: uppercase;
         color: gray;
+    }
+
+    h4{
+        font-size: 25px;
+        
     }
 
     .intro .video,
     .intro .recipe{
 
         width:100%;
+        margin-top:10px;
+        margin-bottom: 60px;
+    }
+
+    .intro .recipe,
+    .intro h4 {
+
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .intro .recipe{
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
     }
 
     .intro .video img{
 
         width: 100%;
     }
+
+    .intro .banner img{
+
+        width: 100%;
+    }
+
 }
 
 /* -----------------
@@ -89,12 +142,14 @@ h1{
         text-align: left;
     }
 
-    .recipe h2 > span {
+    .container h2 > span {
 
         display: inline;
     }
     
 }
+
+/* 992px a infinito Desktop */
 
 @media screen and (max-width:992px){
 
@@ -107,4 +162,10 @@ h1{
 
         width: 30%;
     }
+
+    .presentation .tiramisu{
+
+        width: 70%;
+    }
 }
+
