@@ -32,6 +32,7 @@
     HEADER       
 ----------------- */
 
+
 h1{
 
     font-size: 40px;
@@ -42,8 +43,68 @@ h1{
 
 }
 
+/* ----------------
+    MAIN 
+--------------------*/
+
+.container{
+
+    background-color: #ffff;
+    background-size: 1200px;
+
+    
+    h2{
+    background-color: #f6f5f3;
+    color: #4e3969;
+    font-size: 36px;
+    }
+
+    h3{
+        font-size: 20px;
+        color: gray;
+    }
+
+    .intro .video,
+    .intro .recipe{
+
+        width:100%;
+    }
+
+    .intro .video img{
+
+        width: 100%;
+    }
+}
 
 /* -----------------
    RESPONSIVE
 -------------------- */
 
+/* 768px a infinito Tablet */
+
+@media screen and (min-width: 768px) {
+
+    header{
+
+        text-align: left;
+    }
+
+    .recipe h2 > span {
+
+        display: inline;
+    }
+    
+}
+
+@media screen and (max-width:992px){
+
+    .intro .video {
+
+        width: 69%;
+    }
+    
+    .intro .recipe{
+
+        width: 30%;
+    }
+}
